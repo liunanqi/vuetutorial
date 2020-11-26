@@ -49,3 +49,18 @@ var app6 = new Vue({
         message:'Hello model S!!!'
     }
 })
+
+Vue.component('todo-item',{
+    props:['todo'],
+    template:'<li>{{ todo.action + \' \' + todo.text}}</li>'
+})
+var app7 = new Vue({
+    el:'#app-7',
+    data:{
+        bookList:[
+            {id:1, text:'Harry Potter', action:'burned'},
+            {id:2, text:'Ghost in the Shell', action:'finished'},
+            {id:3, text:'Sherlock Holmes', action:'lost'}
+        ]
+    }
+})
