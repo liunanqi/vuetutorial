@@ -39,12 +39,13 @@
 
 <div id="app-7">
   <ol>
-    <todo-item
+    <book-item
       v-for="item in bookList"
-      v-bind:todo="item"
+      v-bind:bookname="item.text"
+      v-bind:action="item.action"
       v-bind:key="item.id"
     >      
-    </todo-item>
+    </book-item>
   </ol>
 </div>
 <script src="hellovue.js"></script>

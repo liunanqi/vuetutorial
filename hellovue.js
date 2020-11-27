@@ -50,9 +50,9 @@ var app6 = new Vue({
     }
 })
 
-Vue.component('todo-item',{
-    props:['todo'],
-    template:'<li>{{ todo.action + \' \' + todo.text}}</li>'
+Vue.component('book-item',{
+    props:['action', 'bookname'],
+    template:'<li>{{ action + \' the \' + bookname }}</li>'
 })
 var app7 = new Vue({
     el:'#app-7',
