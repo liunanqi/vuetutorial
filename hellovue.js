@@ -3,31 +3,31 @@ var app = new Vue({
     data: {
       message: 'Hello Vue!'
     }
-  })
+})
   
-  var app2 = new Vue({
-el: '#app-2',
-data: {
-  info: '页面加载于 ' + new Date().toLocaleString()
-}
+var app2 = new Vue({
+  el: '#app-2',
+  data: {
+    info: '页面加载于 ' + new Date().toLocaleString()
+  }
 })
 
 var app3 = new Vue({
-el: '#app-3',
-data: {
-  seen: true
-}
+  el: '#app-3',
+  data: {
+    seen: true
+  }
 })
 
 var app4 = new Vue({
-el: '#app-4',
-data: {
-  todos: [
-    { text: '学习 JavaScript' },
-    { text: '学习 Vue' },
-    { text: '整个大项目' }
-  ]
-}
+  el: '#app-4',
+  data: {
+    todos: [
+      { text: '学习 JavaScript' },
+      { text: '学习 Vue' },
+      { text: '整个大项目' }
+    ]
+  }
 })
 
 var app5 = new Vue({
@@ -36,12 +36,11 @@ var app5 = new Vue({
       message: 'Hello Vue,js'
   },
   methods: {
-      reverseMessage:function() {
-          this.message = this.message.split('').reverse().join('')
-      }
+    reverseMessage:function() {
+        this.message = this.message.split('').reverse().join('')
+    }
   }
-}
-)
+})
 
 var app6 = new Vue({
     el:'#app-6',
