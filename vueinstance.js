@@ -5,6 +5,13 @@ var app = new Vue({
     }
 })
 
+var htmlTest = new Vue({
+    el:'#htmlTest',
+    data: {
+        rawHtml: '<span style="color:red">This is red.</span>'
+    }
+})
+
 var data = {
     newTodoText: '',
     visitCount: 0,

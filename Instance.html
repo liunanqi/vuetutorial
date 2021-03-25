@@ -5,10 +5,16 @@
   <script src="vue.min.js"></script>
 </head>
 <body>
+
   <div id="app">
     {{ message }}
   </div>
 
+  <div id="htmlTest">
+    <p>Using mustaches: {{ rawHtml }}</p>
+    <p>Using v-html directive: <span v-html="rawHtml"></span></p>
+  </div>
+  
 <script src="vueinstance.js"></script>
 </body>
 </html>
