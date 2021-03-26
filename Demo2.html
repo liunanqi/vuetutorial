@@ -7,7 +7,12 @@
     <script src="https://unpkg.com/vue@next"></script>
 </head>
 <body>
-    <div id="app"></div>
+    <div id="app">
+        <input v-model="firstName" />
+        <input v-model="lastName" />
+        <button v-on:click="addItem">Welcome</button>
+        <span>{{fullName}}</span>
+    </div>
 </body>
 <script src="js/demo2.js"></script>
 </html>

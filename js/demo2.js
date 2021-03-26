@@ -1,21 +1,16 @@
 Vue.createApp({
     data() {
         return {
-            inputValue:'',
-            list:[]
+            firstName:'',
+            lastName:'',
+            fullName:''
         }
     },
     methods: {
-        handleAddItem() {
-            this.list.push(this.inputValue)
-            this.inputValue = ''
+        addItem() {
+            if(this.firstName && this.lastName) {
+                this.fullName = 'Hello,' + this.firstName + ' ' + this.lastName + '!'
+            }
         }
-    },
-    template: `<div>
-                    <input v-model="inputValue" />
-                    <button v-on:click="handleAddItem">add item</button>
-                    <ul>
-                        <li v-for="(item, index) of list">[{{index}}]{{item}}</li>
-                    </ul>
-               </div>`
+    }
 }).mount("#app")
