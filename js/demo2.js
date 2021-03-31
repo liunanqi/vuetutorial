@@ -67,10 +67,12 @@ const app = Vue.createApp({
     },
     methods: {
       addNewTodo() {
-        this.todos.push({
-          id: this.nextTodoId++,
-          title: this.newTodoText
-        })
+        if(this.newTodoText){
+          this.todos.push({
+            id: this.nextTodoId++,
+            title: this.newTodoText
+          })
+        }
         this.newTodoText = ''
       }
     }
